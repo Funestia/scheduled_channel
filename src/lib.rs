@@ -3,7 +3,7 @@
 //!A scheduled channel works like a normal mpmc channel but it has the option
 //!to supply messages with a timestamp they should be read at.
 //!
-//!## Example unsafe
+//!## Example
 //!```
 //!use scheduled_channel::bounded;
 //!use std::time::{Instant, Duration};

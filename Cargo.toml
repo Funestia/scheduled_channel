@@ -2,6 +2,12 @@
 name = "scheduled_channel"
 version = "0.1.0"
 edition = "2024"
+license = "Apache-2.0"
+description = "A mpmc channel that allows specifying a timestamp for when a message is received"
+readme = "README.md"
+repository = "https://github.com/Funestia/scheduled_channel"
+categories = ["data-structures", "concurrency"]
+keywords = ["channel", "schedule"]
 
 [dependencies]
 crossbeam-utils = "0.8.21"
