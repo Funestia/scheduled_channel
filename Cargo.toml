@@ -1,6 +1,6 @@
 [package]
 name = "scheduled_channel"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 license = "Apache-2.0"
 description = "A mpmc channel that allows specifying a timestamp for when a message is received"

@@ -438,6 +438,8 @@ impl<T> Channel<T> {
                 if let Some(next) = heap.peek() {
                     self.next_instant.set(Some(next.instant)).unwrap();
                     self.receivers.notify();
+                } else {
+                    self.next_instant.set(None).unwrap();
                 }
                 Ok(message)
             } else {
@@ -492,6 +494,8 @@ impl<T> Channel<T> {
                         if let Some(next) = heap.peek() {
                             self.next_instant.set(Some(next.instant)).unwrap();
                             self.receivers.notify();
+                        } else {
+                             self.next_instant.set(None).unwrap();
                         }
                         Ok(message)
                     } else {
